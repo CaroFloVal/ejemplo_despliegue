@@ -1,0 +1,18 @@
+CREATE TABLE users
+(
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+INSERT INTO users (email, password) VALUES
+('user1@example.com', 'password123'),
+('user2@example.com', 'securepass456'),
+('user3@example.com', 'mysecret789'),
+('user4@example.com', 'hashedpass101'),
+('user5@example.com', 'strongpass202'),
+('user6@example.com', 'randompass303'),
+('user7@example.com', 'bestpassword404'),
+('user8@example.com', 'testpass505'),
+('user9@example.com', 'coolpassword606'),
+('user10@example.com', 'ultrasecure707');
